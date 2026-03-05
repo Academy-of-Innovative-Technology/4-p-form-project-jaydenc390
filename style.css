@@ -1,1 +1,51 @@
+body {
+    font-family: monospace;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
 
+.h1 {
+    background-image: url("https://media.istockphoto.com/id/1042321668/photo/italian-pizza-and-pizza-cooking-ingredients-on-black-concrete-background.jpg?s=612x612&w=0&k=20&c=pxhbjC6ulYXWbsFGU2UIodn6SHZEBcKQIuDKFvKQBDE=");
+    background-repeat: no-repeat;
+    color: white;
+}
+
+button {
+    margin-left: 50px;
+    all: unset;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    ;
+}
+
+input[type=text] {
+    all: unset;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 35px;
+}
+
+.meme:hover {
+    color: cornflowerblue;
+    animation: bounce .2s linear infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
