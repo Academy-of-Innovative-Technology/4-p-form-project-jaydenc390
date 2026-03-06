@@ -49,3 +49,19 @@ input[type=text] {
         transform: translateY(-20px);
     }
 }
+
+input[type=password] {
+    all: unset;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 35px;
+}
+
+input[type=email] {
+    all: unset;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 35px;
+}

@@ -16,37 +16,56 @@
     <form method="post" action="">
         <fieldset>
             <legend>Name</legend>
-            <input placeholder="e.g. John Doe" type="text" pattern="[A-Za-z\u00C0-\u017F\s-']+" autofocus>
+            <input placeholder="e.g. John Doe" type="text" pattern="[A-Za-z\u00C0-\u017F\s-']+" required>
         </fieldset>
         <br>
         <fieldset>
-            <legend>Size</legend>
-            <input type="radio"><label class="meme"> 6"</label>
-            <input type="radio"><label class="meme"> 7"</label>
-            <input type="radio"><label> 8"</label>
-            <input type="radio"><label> 10"</label>
-            <input type="radio"><label> 12"</label>
-            <input type="radio"><label> 14"</label>
-            <input type="radio"><label> 16"</label>
-            <input type="radio"><label> 18"</label>
+            <legend>Password</legend>
+            <input placeholder="e.g. 1234" type="password" minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}" required>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Email</legend>
+            <input placeholder="mr.pelzer@aoiths.org" type="email"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Extra Sauce</legend>
+            <input type="radio" name="size"><label>Yes</label>
+            <input type="radio" name="size"><label>No</label>
         </fieldset>
         <br>
         <fieldset>
             <legend>Toppings</legend>
-            <input list="toppings-list" type="text" name="toppings" placeholder="Click on dropdown">
-            <datalist id="toppings-list">
-                <option value="Pepperoni">
-                <option value="Extra Cheese">
-                <option value="Mushroom">
-                <option value="Onions">
-                <option value="Pepper">
-                <option value="Basil">
-                <option value="Olives">
-                <option value="Spinach">
+            <input type="checkbox"><label>Pepperoni</label>
+            <input type="checkbox"><label>Extra Cheese</label>
+            <input type="checkbox"><label>Mushroom</label>
+            <input type="checkbox"><label>Onions</label>
+            <input type="checkbox"><label>Pepper</label>
+            <input type="checkbox"><label>Basil</label>
+            <input type="checkbox"><label>Olives</label>
+            <input type="checkbox"><label>Spinach</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Pizza Size</legend>
+            <input list="size-list" type="text" name="size" placeholder="Click on dropdown">
+            <datalist id="size-list">
+                <option value="6 Inch">
+                <option value="7 Inch">
+                <option value="8 Inch">
+                <option value="10 Inch">
+                <option value="12 Inch">
+                <option value="14 Inch">
+                <option value="16 Inch">
+                <option value="18 Inch">
             </datalist>
         </fieldset>
         <br>
-        <button type="submit" disabled>Submit</button>
+        <input class="apple" type="submit">
     </form>
 </body>
 
